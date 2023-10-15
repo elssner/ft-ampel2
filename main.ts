@@ -5,8 +5,8 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Ampel3(1, 0, 0)
 })
 function Ampel3 (Rot: number, Gelb: number, Grün: number) {
-    pins.digitalWritePin(DigitalPin.P0, Rot)
-    pins.digitalWritePin(DigitalPin.P1, Gelb)
+    pins.digitalWritePin(DigitalPin.P1, Rot)
+    pins.digitalWritePin(DigitalPin.P0, Gelb)
     pins.digitalWritePin(DigitalPin.P2, Grün)
     if (Rot == 1) {
         basic.setLedColor(0xff0000)
